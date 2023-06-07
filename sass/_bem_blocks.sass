@@ -1,0 +1,95 @@
+
+/* ==============================Движение вверх */
+.to-top_dote
+    transform: translateY(100px)
+    opacity: 0
+
+.to-top
+    transition: all 1s
+    transform: translateY(0)
+    opacity: 1
+
+/* ==============================Движение слева на право */
+
+.left-to-right_dote
+    transform: translateX(-100px)
+    opacity: 0
+
+.left-to-right
+    transition: all 1s
+    transform: translateX(0%)
+    opacity: 1
+
+/* ==============================Движение справа на лево */
+
+.right-to-left_dote
+    transform: translateX(100px)
+    opacity: 0
+
+.right-to-left
+    transition: all 1s
+    transform: translateX(0%)
+    opacity: 1
+
+/* ==============================Движение Поворот */
+.rotate_dote
+    transform: rotate(15deg)
+    opacity: 0
+
+.rotate
+    transition: all 0.5s
+    transform: rotate(0)
+    opacity: 1
+
+h1, .h1
+    font-family: 'DM Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 70px
+    line-height: 88px
+    letter-spacing: 3.2px
+    color: #FFFFFF
+    @media (max-width: 991.98px)
+        font-size: 62px
+        line-height: 78px
+
+    &_line
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            left: 0
+            bottom: -7px
+            background: url('../img/icon/h1-line.svg') center / cover no-repeat
+            height: 13px
+            width: 100%
+    &_bold
+        font-weight: 700
+        font-size: 80px
+        @media (max-width: 991.98px)
+            font-size: 72px
+            line-height: 78px
+
+h2, .h2
+    font-weight: 400
+    font-size: 64px
+    line-height: 79px
+    letter-spacing: 2.88px
+    color: #FFFFFF
+    @media (max-width: 578.98px)
+        font-size: 54px
+        line-height: 67px
+    @media (max-width: 395.98px)
+        font-size: 40px
+        line-height: 54px
+
+.btn-view
+    background: #118DA8
+    border-radius: 6px
+    font-weight: 400
+    font-size: 18px
+    line-height: 51px
+    display: inline-block
+    padding: 0 20px
+    color: #FFFFFF
+    white-space: nowrap
